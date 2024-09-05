@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-links-container">
-        <img src="/assets/stuartz.jpeg" className="footer-container-img"></img>
+        <img src="stuartz.jpeg" className="footer-container-img"></img>
         <h3 className="link-item">18K Gold Plated Long Lasting Jewelry</h3>
       </div>
       <div className="footer-links-container">
