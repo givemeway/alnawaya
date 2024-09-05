@@ -1,0 +1,99 @@
+.contact-page {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.contact-container {
+  height: auto;
+  min-width: 50%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-us-info {
+  margin-top: 3rem;
+  height: auto;
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-info p {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-family: Jost;
+}
+
+.contact-us-info strong {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-family: Jost;
+}
+
+.contact-title {
+  width: 100%;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.contact-info-title {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.contact-row {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-input {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border: 1px solid var(--color-grey);
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.contact-message {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  outline: none;
+  width: 100%;
+  border: 1px solid var(--color-grey);
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.contact-btn {
+  width: 100%;
+  background: black;
+  color: whitesmoke;
+  height: 40px;
+  font-weight: 500;
+}
