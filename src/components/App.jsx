@@ -2,8 +2,13 @@ import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./HomePage";
 import { ContactPage } from "./Contact";
 import { AboutUsPage } from "./About";
-import { CategoryProductPage, ProductsPage } from "./ProductsPage";
+import { CategoryProductPage } from "./ProductsPage";
 import { ProductPage } from "./ProductPage";
+import { JewelleryCarePage } from "./Jewellerycare";
+import { TermsPage } from "./Terms";
+import { PrivacyPage } from "./Privacy";
+import { ReturnPage } from "./Return";
+import { ShippingPage } from "./Shipping";
 
 function App() {
   return (
@@ -13,6 +18,11 @@ function App() {
       <Route path="/about-us" element={<AboutUsPage />} />
       <Route path="/product-category/*" element={<CategoryProductPage />} />
       <Route path="/product/*" element={<ProductPage />} />
+      <Route path="/jewelry-care" element={<JewelleryCarePage />} />
+      <Route path="/terms-conditions" element={<TermsPage />} />
+      <Route path="/privacy-policy" element={<PrivacyPage />} />
+      <Route path="/refund-return" element={<ReturnPage />} />
+      <Route path="/shipping-handeling" element={<ShippingPage />} />
     </Routes>
   );
 }

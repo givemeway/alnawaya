@@ -42,7 +42,7 @@ export const Footer = () => {
             <a href="#">Ring Size Guide</a>
           </li>
           <li className="link-item">
-            <a href="#">Jewelry & Care</a>
+            <Link to={"/jewelry-care"}>Jewelry & Care</Link>
           </li>
           <li className="link-item">
             <a href="#">Order Tracking</a>
@@ -56,16 +56,16 @@ export const Footer = () => {
         <h2 className="footer-container-title">Terms & Policy</h2>
         <ul className="link-list">
           <li className="link-item">
-            <a href="#">Shipping Policy</a>
+            <Link to={"/shipping-handeling"}>Shipping Policy</Link>
           </li>
           <li className="link-item">
-            <a href="#">Terms & Conditions</a>
+            <Link to={"/terms-conditions"}>Terms & Conditions</Link>
           </li>
           <li className="link-item">
-            <a href="#">Privacy & Policy</a>
+            <Link to={"/privacy-policy"}>Privacy & Policy</Link>
           </li>
           <li className="link-item">
-            <a href="#">Return & Refund Policy</a>
+            <Link to={"/refund-return"}>Return & Refund Policy</Link>
           </li>
         </ul>
       </div>
