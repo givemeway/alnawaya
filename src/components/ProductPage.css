@@ -1,0 +1,118 @@
+.product-page {
+  width: 100%;
+  height: 100%;
+}
+
+.product-body {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.imgs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  gap: 1rem;
+  overflow-y: auto;
+}
+
+.img-small {
+  /* width: 85px; */
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  box-sizing: border-box;
+  display: block;
+}
+.img-small:hover {
+  border: 1px solid black;
+}
+
+.imgs-preview-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  /* gap: 2rem; */
+  width: 60%;
+  height: 500px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.img-zoom {
+  position: absolute;
+  left: 20%;
+  top: 0%;
+  height: 100%;
+}
+
+.product-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  gap: 1rem;
+}
+
+.product-description {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  font-family: Jost;
+  font-weight: 500;
+}
+
+.product-sku-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product-category-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product-detailed-descrption-container {
+  width: 100%;
+  height: 300px;
+  border-top: 1px solid var(--color-grey-secondary);
+}
+
+.detailed-description-title {
+  /* width: 100%; */
+  text-align: left;
+  margin: 0;
+  font-family: Jost;
+  font-weight: 500;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.detailed-description-p {
+  /* width: 100%; */
+  text-align: left;
+  margin: 0;
+  font-family: Jost;
+  font-weight: 400;
+  padding-right: 1rem;
+}

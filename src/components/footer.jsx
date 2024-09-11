@@ -1,29 +1,30 @@
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 export const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-links-container">
-        <img src="stuartz.jpeg" className="footer-container-img"></img>
-        <h3 className="link-item">18K Gold Plated Long Lasting Jewelry</h3>
+        <img
+          src="../../assets/stuartz-brown.png"
+          className="footer-container-img"
+        ></img>
+        <h3 className="link-item">14K & 18K Gold Plated Jewelry</h3>
       </div>
       <div className="footer-links-container">
         <h2 className="footer-container-title">Quick links</h2>
         <ul className="link-list">
           <li className="link-item">
-            <a href="#">Earnings</a>
+            <Link to={"/product-category/earrings"}>Earnings</Link>
           </li>
           <li className="link-item">
-            <a href="#">Earnings</a>
+            <Link to={"/product-category/anklets"}>Anklets</Link>
           </li>
           <li className="link-item">
-            <a href="#">Rings</a>
+            <Link to={"/product-category/necklace"}>Necklace</Link>
           </li>
           <li className="link-item">
-            <a href="#">Necklace</a>
-          </li>
-          <li className="link-item">
-            <a href="#">Bracelet</a>
+            <Link to={"/product-category/bracelets"}>Bracelet</Link>
           </li>
         </ul>
       </div>
@@ -32,7 +33,7 @@ export const Footer = () => {
         <h2 className="footer-container-title">UseFul links</h2>
         <ul className="link-list">
           <li className="link-item">
-            <a href="#">About</a>
+            <Link to={"/about-us"}>About</Link>
           </li>
           <li className="link-item">
             <a href="#">FAQs</a>
@@ -47,7 +48,7 @@ export const Footer = () => {
             <a href="#">Order Tracking</a>
           </li>
           <li className="link-item">
-            <a href="#">Contact Us</a>
+            <Link to={"/contact"}>Contact Us</Link>
           </li>
         </ul>
       </div>
@@ -78,7 +79,7 @@ export const Footer = () => {
             <a href="#">Phone #</a>
           </li> */}
           <li className="link-item">
-            <a href="#">Email: accounts@alnawaya.com</a>
+            <a href="#">Email: sales@alnawaya.com</a>
           </li>
         </ul>
       </div>

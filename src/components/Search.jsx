@@ -15,8 +15,9 @@ export const Search = () => {
       </div>
       <div className="search-banner-container">
         <Link to={"/"} className="search-banner-link">
-          <img src="stuartz.jpeg" className="search-img" />
+          <img src="../../assets/stuartz-green.png" className="search-img" />
         </Link>
+        <span className="img-banner-name">by Al Nawaya</span>
       </div>
     </div>
   );

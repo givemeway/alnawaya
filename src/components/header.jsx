@@ -4,15 +4,23 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
-  const { earnings, rings, necklace, bracelet, about, contact } = useSelector(
+  const { earnings, anklets, necklace, bracelet, about, contact } = useSelector(
     (state) => state.tabSelection
   );
   const navigate = useNavigate();
-  const handleEarnings = () => {};
-  const handleRings = () => {};
+  const handleEarnings = () => {
+    navigate("/product-category/earrings");
+  };
+  const handleAnklets = () => {
+    navigate("/product-category/anklets");
+  };
 
-  const handleNecklace = () => {};
-  const handleBracelet = () => {};
+  const handleNecklace = () => {
+    navigate("/product-category/necklace");
+  };
+  const handleBracelet = () => {
+    navigate("/product-category/bracelets");
+  };
   const handleAbout = () => {
     navigate("/about-us");
   };
@@ -26,13 +34,13 @@ export const Header = () => {
         className={` ${earnings ? "btn-tab-active" : "header-btn"}`}
         onClick={handleEarnings}
       >
-        EARNINGS
+        EARRINGS
       </button>
       <button
-        className={` ${rings ? "btn-tab-active" : "header-btn"}`}
-        onClick={handleRings}
+        className={` ${anklets ? "btn-tab-active" : "header-btn"}`}
+        onClick={handleAnklets}
       >
-        RINGS
+        ANKLETS
       </button>
       <button
         className={` ${necklace ? "btn-tab-active" : "header-btn"}`}

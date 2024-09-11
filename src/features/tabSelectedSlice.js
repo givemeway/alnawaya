@@ -5,7 +5,7 @@ const tabSelectionSlice = createSlice({
 
   initialState: {
     earnings: false,
-    rings: false,
+    anklets: false,
     necklace: false,
     bracelet: false,
     about: false,
