@@ -36,16 +36,13 @@ export const Footer = () => {
             <Link to={"/about-us"}>About</Link>
           </li>
           <li className="link-item">
-            <a href="#">FAQs</a>
-          </li>
-          <li className="link-item">
-            <a href="#">Ring Size Guide</a>
-          </li>
-          <li className="link-item">
             <Link to={"/jewelry-care"}>Jewelry & Care</Link>
           </li>
           <li className="link-item">
             <a href="#">Order Tracking</a>
+          </li>
+          <li className="link-item">
+            <Link to={"/request-form"}>Return / Exchange</Link>
           </li>
           <li className="link-item">
             <Link to={"/contact"}>Contact Us</Link>

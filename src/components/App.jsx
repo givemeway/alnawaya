@@ -9,6 +9,7 @@ import { TermsPage } from "./Terms";
 import { PrivacyPage } from "./Privacy";
 import { ReturnPage } from "./Return";
 import { ShippingPage } from "./Shipping";
+import { ExchangePage } from "./Exchange";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/privacy-policy" element={<PrivacyPage />} />
       <Route path="/refund-return" element={<ReturnPage />} />
       <Route path="/shipping-handeling" element={<ShippingPage />} />
+      <Route path="/request-form" element={<ExchangePage />} />
     </Routes>
   );
 }

@@ -1,0 +1,42 @@
+.exchange-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.exchange-field-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.exchange-label {
+  width: 100%;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 500;
+}
+
+.exchange-field-container input {
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.exchange-btn {
+  background: black;
+  border: 1px solid black;
+  width: 100%;
+  height: 40px;
+  color: whitesmoke;
+  font-weight: 500;
+  cursor: pointer;
+  box-sizing: border-box;
+}

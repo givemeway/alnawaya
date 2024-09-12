@@ -9,6 +9,11 @@ export const Contact = () => {
   const dispatch = useDispatch();
   const provider = useSelector((state) => state.tabSelection);
 
+  const handleSubmit = (e) => {
+    const form = e.target;
+    console.log(form.email, form.name, form.phone, form.comments);
+  };
+
   useEffect(() => {
     dispatch(
       setTabSelection({
@@ -24,7 +29,7 @@ export const Contact = () => {
 
   return (
     <div className="contact-body">
-      <div className="contact-container">
+      <form className="contact-container" onSubmit={handleSubmit}>
         <h2 className="contact-title">Contact Us</h2>
         <div className="contact-row">
           <input
@@ -56,9 +61,11 @@ export const Contact = () => {
           ></textarea>
         </div>
         <div className="contact-row">
-          <button className="contact-btn">Send Message</button>
+          <button className="contact-btn" type={"submit"}>
+            Send Message
+          </button>
         </div>
-      </div>
+      </form>
       <div className="contact-us-info">
         <h2 className="contact-info-title">Contact Info</h2>
         <p style={{ marginTop: "1rem" }}>
