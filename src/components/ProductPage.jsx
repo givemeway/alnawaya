@@ -49,9 +49,11 @@ export const Product = () => {
           <InnerImageZoom
             src={selectedImage}
             zoomType="click"
-            // zoomScale={1.2}
+            zoomScale={1.2}
             hideHint={true}
             className="img-zoom"
+            height={900}
+            width={400}
           />
         </div>
         {product && (
@@ -67,7 +69,10 @@ export const Product = () => {
             </div>
             <div className="product-detailed-descrption-container">
               <h3 className="detailed-description-title">Description</h3>
-              <p className="detailed-description-p">
+              <p
+                className="detailed-description-p"
+                style={{ textOverflow: "ellipsis" }}
+              >
                 {product["description_details"]}
               </p>
               <ul>

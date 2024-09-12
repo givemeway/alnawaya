@@ -9,6 +9,7 @@ import { setTabSelection } from "../features/tabSelectedSlice";
 import emailjs from "@emailjs/browser";
 import { SuccessIcon } from "./icons/SuccessIcon";
 import { CloseIcon } from "./icons/CloseIcon";
+import { Message } from "./Message";
 
 export const Contact = () => {
   const dispatch = useDispatch();
@@ -64,31 +65,11 @@ export const Contact = () => {
   return (
     <div className="contact-body">
       {isFormSubmitted && (
-        <div
-          className="contact-container"
-          style={{
-            border: "1px solid #e2c5b7",
-            padding: "1rem",
-            background: "whitesmoke",
-            borderRadius: "5px",
-            gap: 0,
-            position: "relative",
-          }}
-        >
-          <div className="submit-success-container">
-            <h2 className="submit-success-heading">Message Received </h2>-
-            <SuccessIcon style={{ height: "100%", width: 25 }} />
-          </div>
-          <p className="submit-message">
-            We will revert to your e-mail [{form.email}] once Order Id and
-            e-mail is confirmed
-          </p>
-          <CloseIcon
-            className={"close-icon"}
-            style={{ height: 25, width: 25 }}
-            onClick={() => setIsFormSubmitted(false)}
-          />
-        </div>
+        <Message
+          msg={`We will revert to your e-mail [${form.email}] as soon a posible`}
+          heading={"Message Received"}
+          onClick={() => setIsFormSubmitted(false)}
+        />
       )}
       {!isFormSubmitted && (
         <form className="contact-container" onSubmit={handleSubmit}>
