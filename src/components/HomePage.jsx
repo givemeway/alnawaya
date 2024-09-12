@@ -136,7 +136,7 @@ export const HomePage = () => {
             to={"/product-category/anklets"}
           >
             <div className="category-circle">
-              <img src="../../assets/RINGS1-360x360.webp" />
+              <img src="../../assets/MKAK012SSBL_1_160x.jpg" />
             </div>
             <button
               className={`header-btn ${category.rings ? "isHover" : "noHover"}`}
@@ -168,7 +168,7 @@ export const HomePage = () => {
             to={"/product-category/bracelets"}
           >
             <div className="category-circle">
-              <img src="../../assets/MKAK012SSBL_1_160x.jpg" />
+              <img src="../../assets/br1-360x360.webp" />
             </div>
             <button
               className={`header-btn ${
