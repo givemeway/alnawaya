@@ -58,7 +58,9 @@ export const Product = () => {
         </div>
         {product && (
           <div className="product-description-container">
-            <h3 className="product-description">{product["description"]}</h3>
+            <div className="description-container">
+              <h3 className="description-heading">{product["description"]}</h3>
+            </div>
             <div className="product-sku-container">
               <span className="product-sku">SKU:</span>
               <span>CCEARING1079</span>

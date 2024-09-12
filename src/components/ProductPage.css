@@ -66,13 +66,20 @@
   gap: 1rem;
 }
 
-.product-description {
+.description-container {
+  width: 100%;
+  height: auto;
+}
+
+.description-heading {
   width: 100%;
   text-align: left;
   margin: 0;
   font-family: Jost;
   font-weight: 400;
   font-size: 2rem;
+  height: auto;
+  line-height: 2rem;
 }
 
 .product-sku-container {

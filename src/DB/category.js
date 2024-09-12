@@ -1,7 +1,7 @@
 export const db = {
   anklets: [
     {
-      description: "𝟭𝟴𝗞 𝗣𝗩𝗗 𝗚𝗼𝗹𝗱 𝗣𝗹𝗮𝘁𝗶𝗻𝗴 𝗼𝗻 𝟯𝟭𝟲𝗟 𝗦𝘁𝗮𝗶𝗻𝗹𝗲𝘀𝘀 𝗦𝘁𝗲𝗲𝗹",
+      description: "18K PVD Gold Plating on 316L Stainless Steel",
       description_details: "𝘞𝘢𝘵𝘦𝘳𝘱𝘳𝘰𝘰𝘧 | 𝘛𝘢𝘳𝘯𝘪𝘴𝘩 𝘙𝘦𝘴𝘪𝘴𝘵𝘢𝘯𝘵 | 𝘓𝘰𝘯𝘨 𝘓𝘢𝘴𝘵𝘪𝘯𝘨",
       description_list: [
         "Pure 18K Gold Plated",
@@ -22,7 +22,7 @@ export const db = {
       ],
     },
     {
-      description: "𝟭𝟴𝗞 𝗣𝗩𝗗 𝗚𝗼𝗹𝗱 𝗣𝗹𝗮𝘁𝗶𝗻𝗴 𝗼𝗻 𝟯𝟭𝟲𝗟 𝗦𝘁𝗮𝗶𝗻𝗹𝗲𝘀𝘀 𝗦𝘁𝗲𝗲𝗹",
+      description: "18K PVD Gold Plating on 316L Stainless Steel",
       description_details: "𝘞𝘢𝘵𝘦𝘳𝘱𝘳𝘰𝘰𝘧 | 𝘛𝘢𝘳𝘯𝘪𝘴𝘩 𝘙𝘦𝘴𝘪𝘴𝘵𝘢𝘯𝘵 | 𝘓𝘰𝘯𝘨 𝘓𝘢𝘴𝘵𝘪𝘯𝘨",
       description_list: [
         "Pure 18K Gold Plated",
@@ -41,7 +41,7 @@ export const db = {
       ],
     },
     {
-      description: "𝟭𝟴𝗞 𝗣𝗩𝗗 𝗚𝗼𝗹𝗱 𝗣𝗹𝗮𝘁𝗶𝗻𝗴 𝗼𝗻 𝟯𝟭𝟲𝗟 𝗦𝘁𝗮𝗶𝗻𝗹𝗲𝘀𝘀 𝗦𝘁𝗲𝗲𝗹",
+      description: "18K PVD Gold Plating on 316L Stainless Steel",
       description_details: "𝘞𝘢𝘵𝘦𝘳𝘱𝘳𝘰𝘰𝘧 | 𝘛𝘢𝘳𝘯𝘪𝘴𝘩 𝘙𝘦𝘴𝘪𝘴𝘵𝘢𝘯𝘵 | 𝘓𝘰𝘯𝘨 𝘓𝘢𝘴𝘵𝘪𝘯𝘨",
       description_list: [
         "Pure 18K Gold Plated",
