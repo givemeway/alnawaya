@@ -57,6 +57,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   display: grid;
   width: 50%;
+  column-gap: 1rem;
 }
 
 .category-container {
@@ -147,6 +148,7 @@
       1fr
     ); /* 2 circles per row on smaller screens */
     width: 90%;
+    row-gap: 1rem;
   }
 }
 

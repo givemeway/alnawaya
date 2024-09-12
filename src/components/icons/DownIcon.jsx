@@ -3,10 +3,10 @@ export const DownIcon = ({ style, onClick, className }) => {
     <svg
       viewBox="0 0 24 24"
       fill="none"
-      {...style}
       role="presentation"
       focusable="false"
       onClick={onClick}
+      {...style}
       className={`${className ? className : ""}`}
     >
       <path

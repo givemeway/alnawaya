@@ -7,10 +7,13 @@ import { Search } from "./Search";
 import { useEffect } from "react";
 import { setTabSelection } from "../features/tabSelectedSlice";
 import emailjs from "@emailjs/browser";
+import { SuccessIcon } from "./icons/SuccessIcon";
+import { CloseIcon } from "./icons/CloseIcon";
 
 export const Contact = () => {
   const dispatch = useDispatch();
   const [sending, setSending] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const [form, setForm] = useState({
     from_name: "",
@@ -33,6 +36,7 @@ export const Contact = () => {
       .then((result) => {
         console.log(result);
         setSending(false);
+        setIsFormSubmitted(true);
       })
       .catch((err) => console.log(err));
     console.log(
@@ -59,52 +63,81 @@ export const Contact = () => {
 
   return (
     <div className="contact-body">
-      <form className="contact-container" onSubmit={handleSubmit}>
-        <h2 className="contact-title">Contact Us</h2>
-        <div className="contact-row">
-          <input
-            name="from_name"
-            placeholder="Name"
-            type="text"
-            className="contact-input"
-            value={form.from_name}
-            onChange={handleChange}
-          ></input>
-          <input
-            name="email"
-            placeholder="Email"
-            type="email"
-            className="contact-input"
-            value={form.email}
-            onChange={handleChange}
-          ></input>
+      {isFormSubmitted && (
+        <div
+          className="contact-container"
+          style={{
+            border: "1px solid #e2c5b7",
+            padding: "1rem",
+            background: "whitesmoke",
+            borderRadius: "5px",
+            gap: 0,
+            position: "relative",
+          }}
+        >
+          <div className="submit-success-container">
+            <h2 className="submit-success-heading">Message Received </h2>-
+            <SuccessIcon style={{ height: "100%", width: 25 }} />
+          </div>
+          <p className="submit-message">
+            We will revert to your e-mail [{form.email}] once Order Id and
+            e-mail is confirmed
+          </p>
+          <CloseIcon
+            className={"close-icon"}
+            style={{ height: 25, width: 25 }}
+            onClick={() => setIsFormSubmitted(false)}
+          />
         </div>
-        <div className="contact-row">
-          <input
-            name="phone"
-            placeholder="Phone Number"
-            type={"tel"}
-            className="contact-input"
-            value={form.phone}
-            onChange={handleChange}
-          ></input>
-        </div>
-        <div className="contact-row">
-          <textarea
-            name="message"
-            placeholder="Write Your Comment"
-            className="contact-message"
-            value={form.message}
-            onChange={handleChange}
-          ></textarea>
-        </div>
-        <div className="contact-row">
-          <button className="contact-btn" type={"submit"}>
-            {!sending && <>Send Message</>}
-            {sending && <>Sending...</>}
-          </button>
-        </div>
-      </form>
+      )}
+      {!isFormSubmitted && (
+        <form className="contact-container" onSubmit={handleSubmit}>
+          <h2 className="contact-title">Contact Us</h2>
+          <div className="contact-row">
+            <input
+              name="from_name"
+              placeholder="Name"
+              type="text"
+              className="contact-input"
+              value={form.from_name}
+              onChange={handleChange}
+            ></input>
+            <input
+              name="email"
+              placeholder="Email"
+              type="email"
+              className="contact-input"
+              value={form.email}
+              onChange={handleChange}
+            ></input>
+          </div>
+          <div className="contact-row">
+            <input
+              name="phone"
+              placeholder="Phone Number"
+              type={"tel"}
+              className="contact-input"
+              value={form.phone}
+              onChange={handleChange}
+            ></input>
+          </div>
+          <div className="contact-row">
+            <textarea
+              name="message"
+              placeholder="Write Your Comment"
+              className="contact-message"
+              value={form.message}
+              onChange={handleChange}
+            ></textarea>
+          </div>
+          <div className="contact-row">
+            <button className="contact-btn" type={"submit"}>
+              {!sending && <>Send Message</>}
+              {sending && <>Sending...</>}
+            </button>
+          </div>
+        </form>
+      )}
       <div className="contact-us-info">
         <h2 className="contact-info-title">Contact Info</h2>
         <p style={{ marginTop: "1rem" }}>

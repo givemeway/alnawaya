@@ -32,16 +32,6 @@
   width: 100%;
 }
 
-.link-item {
-  display: flex;
-  align-items: center;
-  height: 30px;
-  width: 100%;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-}
-
 .footer-container-title {
   width: 100%;
   text-align: left;
@@ -56,6 +46,13 @@
   text-decoration: none;
   color: grey;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .link-item > a:hover {

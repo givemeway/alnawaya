@@ -9,7 +9,12 @@ export const Footer = () => {
           src="../../assets/stuartz-brown.png"
           className="footer-container-img"
         ></img>
-        <h3 className="link-item">14K & 18K Gold Plated Jewelry</h3>
+        <h3
+          className="link-item"
+          style={{ margin: 0, width: "100%", textAlign: "center" }}
+        >
+          14K & 18K Gold Plated Jewelry
+        </h3>
       </div>
       <div className="footer-links-container">
         <h2 className="footer-container-title">Quick links</h2>
@@ -72,9 +77,6 @@ export const Footer = () => {
           <li className="link-item">
             <a href="#">Need Any Help?</a>
           </li>
-          {/* <li className="link-item">
-            <a href="#">Phone #</a>
-          </li> */}
           <li className="link-item">
             <a href="#">Email: sales@alnawaya.com</a>
           </li>
