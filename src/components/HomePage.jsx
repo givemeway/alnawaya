@@ -7,6 +7,10 @@ import { useEffect } from "react";
 import { setTabSelection } from "../features/tabSelectedSlice";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { db } from "../DB/category";
+import Slider from "react-slick";
 export const HomePage = () => {
   const [hover, setHover] = useState(false);
   const [category, setCategory] = useState({
@@ -15,6 +19,15 @@ export const HomePage = () => {
     rings: false,
     bracelet: false,
   });
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+  };
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(
@@ -78,6 +91,22 @@ export const HomePage = () => {
           <h2 className="home-h2">Introducing your everyday jewellery. </h2>
           <p className="home-p">14K & 18K Gold Plated</p>
           <button className="home-btn">Shop Now</button>
+        </div>
+        <div className="carousel-container">
+          <Slider {...settings}>
+            <div className="carousel-img-container">
+              <img src={db["anklets"][1]["image"]} className="carousel-img" />
+            </div>
+            <div className="carousel-img-container">
+              <img src={db["bracelets"][1]["image"]} className="carousel-img" />
+            </div>
+            <div className="carousel-img-container">
+              <img src={db["earrings"][1]["image"]} className="carousel-img" />
+            </div>
+            <div className="carousel-img-container">
+              <img src={db["necklace"][1]["image"]} className="carousel-img" />
+            </div>
+          </Slider>
         </div>
       </div>
       <div className="home-categories-container">

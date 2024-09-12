@@ -4,14 +4,12 @@
 }
 
 .home-bg-container {
-  /* width: 100%; */
   height: 600px;
-  background-image: url("../../assets/bg.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding-left: 2rem;
-  padding-top: 2rem;
-  /* background: #c3d3c2; */
+  background: #c3d3c2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg-img {
@@ -48,9 +46,14 @@
 .home-shop-container {
   display: flex;
   flex-direction: column;
+  position: absolute;
   height: auto;
   width: clamp(40%, 50%, 60%);
   gap: clamp(0.1rem, 1vw, 1rem);
+  z-index: 100;
+  top: 0%;
+  left: 0%;
+  margin: 1rem;
 }
 
 .home-category-grid {
@@ -116,6 +119,22 @@
   left: 6px;
   background: black;
   transition: width 200ms ease-in-out;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-container {
+  width: 90%;
+  height: auto;
+}
+
+.carousel-img-container {
+  width: auto;
+  height: 500px;
 }
 
 .header-btn:hover::after {
