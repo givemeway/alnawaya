@@ -1,20 +1,50 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { useState } from "react";
 import "./Contact.css";
 import { Footer } from "./footer";
 import { Header } from "./header";
 import { Search } from "./Search";
 import { useEffect } from "react";
 import { setTabSelection } from "../features/tabSelectedSlice";
+import emailjs from "@emailjs/browser";
+
 export const Contact = () => {
   const dispatch = useDispatch();
-  const provider = useSelector((state) => state.tabSelection);
+  const [sending, setSending] = useState(false);
+
+  const [form, setForm] = useState({
+    from_name: "",
+    email: "",
+    phone: "",
+    comments: "",
+  });
+
+  const handleChange = (e) => {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
     const form = e.target;
-    console.log(form.email, form.name, form.phone, form.comments);
+    setSending(true);
+    emailjs
+      .sendForm("service_bfxxfo6", "template_aft5mfo", form)
+      .then((result) => {
+        console.log(result);
+        setSending(false);
+      })
+      .catch((err) => console.log(err));
+    console.log(
+      form.email.value,
+      form.from_name.value,
+      form.phone.value,
+      form.message.value
+    );
   };
 
   useEffect(() => {
+    emailjs.init("nvElSF8oZRlswxZhm");
     dispatch(
       setTabSelection({
         earnings: false,
@@ -33,16 +63,20 @@ export const Contact = () => {
         <h2 className="contact-title">Contact Us</h2>
         <div className="contact-row">
           <input
-            name="name"
+            name="from_name"
             placeholder="Name"
             type="text"
             className="contact-input"
+            value={form.from_name}
+            onChange={handleChange}
           ></input>
           <input
             name="email"
             placeholder="Email"
             type="email"
             className="contact-input"
+            value={form.email}
+            onChange={handleChange}
           ></input>
         </div>
         <div className="contact-row">
@@ -51,18 +85,23 @@ export const Contact = () => {
             placeholder="Phone Number"
             type={"tel"}
             className="contact-input"
+            value={form.phone}
+            onChange={handleChange}
           ></input>
         </div>
         <div className="contact-row">
           <textarea
-            name="comments"
+            name="message"
             placeholder="Write Your Comment"
             className="contact-message"
+            value={form.message}
+            onChange={handleChange}
           ></textarea>
         </div>
         <div className="contact-row">
           <button className="contact-btn" type={"submit"}>
-            Send Message
+            {!sending && <>Send Message</>}
+            {sending && <>Sending...</>}
           </button>
         </div>
       </form>

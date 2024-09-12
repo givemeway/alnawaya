@@ -7,9 +7,12 @@ import { Header } from "./header";
 import { Search } from "./Search";
 import { useEffect } from "react";
 import { setTabSelection } from "../features/tabSelectedSlice";
+import emailjs from "@emailjs/browser";
+
 export const Return = () => {
   const dispatch = useDispatch();
   const [form, setForm] = useState({ orderId: "", email: "" });
+  const [sending, setSending] = useState(false);
 
   const handleChange = (e) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -20,9 +23,18 @@ export const Return = () => {
     e.stopPropagation();
     console.log(e.target.orderId.value, e.target.email.value);
     console.log("handle submit");
+    setSending(true);
+    emailjs
+      .sendForm("service_bfxxfo6", "template_ppfw9nf", e.target)
+      .then((result) => {
+        setSending(false);
+        console.log(result);
+      })
+      .catch((err) => console.log(err));
   };
 
   useEffect(() => {
+    emailjs.init("nvElSF8oZRlswxZhm");
     dispatch(
       setTabSelection({
         earnings: false,
@@ -63,7 +75,8 @@ export const Return = () => {
           </div>
           <div className="exchange-field-container">
             <button className="exchange-btn" type={"submit"}>
-              Submit
+              {!sending && <>Submit</>}
+              {sending && <>Sending...</>}
             </button>
           </div>
         </form>
