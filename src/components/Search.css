@@ -30,7 +30,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   text-decoration: none;
-  position: relative;
+  /* position: relative; */
 }
 
 .search-banner-container {
@@ -59,16 +59,13 @@
 }
 
 .img-banner-name {
-  position: absolute;
-  bottom: 20%;
-  left: 12%;
   font-size: 0.9rem;
-  text-align: left;
+  text-align: center;
+  width: 100%;
   height: auto;
   color: black;
   font-weight: 400;
   font-family: Jost;
-  z-index: 100;
   letter-spacing: 0.2rem;
 }
 

@@ -168,7 +168,7 @@ export const HomePage = () => {
             to={"/product-category/bracelets"}
           >
             <div className="category-circle">
-              <img src="../../assets/br1-360x360.webp" />
+              <img src="../../assets/MKAK012SSBL_1_160x.jpg" />
             </div>
             <button
               className={`header-btn ${
