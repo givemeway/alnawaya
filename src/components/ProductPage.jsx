@@ -75,7 +75,7 @@ export const Product = () => {
               >
                 {product["description_details"]}
               </p>
-              <ul>
+              <ul className="description-ul">
                 {product["description_list"].map((list, idx) => (
                   <li key={idx}>{list}</li>
                 ))}

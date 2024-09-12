@@ -7,8 +7,6 @@ import { Search } from "./Search";
 import { useEffect } from "react";
 import { setTabSelection } from "../features/tabSelectedSlice";
 import emailjs from "@emailjs/browser";
-import { SuccessIcon } from "./icons/SuccessIcon";
-import { CloseIcon } from "./icons/CloseIcon";
 import { Message } from "./Message";
 
 export const Contact = () => {
