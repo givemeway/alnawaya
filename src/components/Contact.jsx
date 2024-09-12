@@ -33,7 +33,7 @@ export const Contact = () => {
     const form = e.target;
     setSending(true);
     emailjs
-      .sendForm("service_bfxxfo6", "template_aft5mfo", form)
+      .sendForm("service_5qz1sd6", "template_aft5mfo", form)
       .then((result) => {
         console.log(result);
         setSending(false);
