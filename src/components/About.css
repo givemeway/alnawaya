@@ -41,4 +41,9 @@
   .about-us-container {
     width: 100%;
   }
+  .about-us-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 }

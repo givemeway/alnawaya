@@ -64,9 +64,7 @@ export const Return = () => {
       )}
       {!isFormSubmitted && (
         <div className="about-us-container">
-          <h3 className="about-us-heading" style={{ textAlign: "left" }}>
-            Return/Exchange Request Form
-          </h3>
+          <h3 className="about-us-heading">Return/Exchange Request Form</h3>
           <form onSubmit={handleSubmit} className="exchange-form-container">
             <div className="exchange-field-container">
               <label className="exchange-label">Enter Order Id</label>
