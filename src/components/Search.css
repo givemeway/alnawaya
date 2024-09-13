@@ -51,6 +51,10 @@
   width: 30%;
 }
 
+.search-context-container {
+  display: none;
+}
+
 .search-icon {
   position: absolute;
   right: 1rem;
@@ -79,5 +83,16 @@
   }
   .search-banner-link {
     width: 50%;
+  }
+  .search-context-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50px;
+  }
+  .search-context-icon {
+    height: 25px;
+    width: 25px;
   }
 }

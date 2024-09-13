@@ -10,6 +10,7 @@ const tabSelectionSlice = createSlice({
     bracelet: false,
     about: false,
     contact: false,
+    showContext: false,
   },
   reducers: {
     setTabSelection: (state, actions) => {
