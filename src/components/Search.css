@@ -7,6 +7,7 @@
   /* padding-left: 1rem;
   padding-right: 1rem; */
   width: 100%;
+  padding: relative;
 }
 
 .search-input {
@@ -85,11 +86,14 @@
     width: 50%;
   }
   .search-context-container {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100px;
     width: 50px;
+    top: 0px;
+    left: 10px;
   }
   .search-context-icon {
     height: 25px;
