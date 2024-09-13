@@ -212,7 +212,7 @@
   object-fit: contain;
 }
 .product-img-container {
-  width: 50%;
+  width: 30%;
   height: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -226,6 +226,7 @@
   height: 100%;
   width: auto;
   gap: 1rem;
+  width: 70%;
 }
 
 .product-name {
@@ -268,7 +269,7 @@
 
 .product-row-container {
   width: 100%;
-  height: 150px;
+  height: 275px;
   display: block;
 }
 

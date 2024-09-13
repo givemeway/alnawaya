@@ -145,6 +145,7 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
+    margin: 0;
   }
   .imgs-preview-container {
     display: none;

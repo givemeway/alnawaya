@@ -52,14 +52,7 @@ export const Footer = () => {
             onClick={() => handleExpand("QUICKLINKS")}
           />
         </h2>
-        <ul
-          className={`link-list ${expand.quickLinks ? "list-expand" : ""}`}
-          // style={{
-          //   height: `${expand.quickLinks ? "120px" : "0px"}`,
-          //   transition: "height 200ms ease-in-out",
-          //   visibility: "visible",
-          // }}
-        >
+        <ul className={`link-list ${expand.quickLinks ? "list-expand" : ""}`}>
           <li className="link-item">
             <Link to={"/product-category/earrings"}>Earnings</Link>
           </li>
@@ -79,7 +72,9 @@ export const Footer = () => {
         <h2 className="footer-container-title">
           UseFul links
           <DownIcon
-            className={"footer-expand-icon"}
+            className={`footer-expand-icon ${
+              expand.usefulLinks ? "rotate" : ""
+            }`}
             onClick={() => handleExpand("USEFULLINKS")}
           />
         </h2>
@@ -105,7 +100,7 @@ export const Footer = () => {
         <h2 className="footer-container-title">
           Terms & Policy
           <DownIcon
-            className={"footer-expand-icon"}
+            className={`footer-expand-icon ${expand.terms ? "rotate" : ""}`}
             onClick={() => handleExpand("TERMS")}
           />
         </h2>
@@ -128,7 +123,7 @@ export const Footer = () => {
         <h2 className="footer-container-title">
           Contact Info
           <DownIcon
-            className={"footer-expand-icon"}
+            className={`footer-expand-icon ${expand.contact ? "rotate" : ""}`}
             onClick={() => handleExpand("HELP")}
           />
         </h2>
