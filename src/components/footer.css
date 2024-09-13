@@ -40,6 +40,12 @@
   text-transform: inherit;
   border: none;
   padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-expand-icon {
+  display: none;
 }
 
 .link-item > a {
@@ -72,4 +78,36 @@
   font-weight: 400;
   text-align: center;
   flex-grow: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-expand-icon {
+    display: block;
+    height: 25px;
+    width: 25px;
+    transform: rotate(0deg);
+    transition: transform 200ms ease-in-out;
+  }
+  .footer-expand-icon.rotate {
+    transform: rotate(-180deg);
+  }
+
+  .link-list {
+    visibility: hidden;
+    height: 0px;
+    transition: height 200ms ease-in-out;
+  }
+  .list-expand {
+    height: 150px;
+    transition: height 200ms ease-in-out;
+    visibility: visible;
+  }
+
+  .footer-links-container {
+    height: auto;
+  }
+  .footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }

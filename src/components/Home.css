@@ -40,7 +40,11 @@
   text-wrap: nowrap;
   padding: 0;
   margin: 0;
-  width: clamp(30px, 15vw, 150px);
+  outline: none;
+  border: 1px solid black;
+  background: whitesmoke;
+  width: clamp(2rem, 20vw, 5rem);
+  cursor: pointer;
 }
 
 .home-shop-container {
@@ -52,7 +56,7 @@
   gap: clamp(0.1rem, 1vw, 1rem);
   z-index: 100;
   top: 0%;
-  left: 0%;
+  left: 1rem;
   margin: 1rem;
 }
 
@@ -154,12 +158,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 2rem;
 }
 
 /* Responsive behavior */
 @media only screen and (max-width: 768px) {
   .home-bg-container {
-    height: 300px;
+    height: auto;
   }
   .home-category-grid {
     grid-template-columns: repeat(

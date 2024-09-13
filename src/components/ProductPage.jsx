@@ -7,6 +7,7 @@ import { Footer } from "./footer";
 import { Search } from "./Search";
 import { useLocation, useParams } from "react-router-dom";
 import { db } from "../DB/category";
+import Slider from "react-slick";
 
 export const Product = () => {
   const params = useParams();
@@ -18,6 +19,15 @@ export const Product = () => {
   const handleSelect = (idx) => {
     const img = db[productName][productID]["images"][idx];
     setSelectedImage(img);
+  };
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
   };
 
   useEffect(() => {
@@ -56,6 +66,22 @@ export const Product = () => {
             width={400}
           />
         </div>
+        {product && (
+          <div className="mobile-slider-container">
+            <Slider {...settings}>
+              {product["images"].map((img, idx) => (
+                <div className="mobile-img-container">
+                  <img
+                    src={img}
+                    key={idx}
+                    className="carousel-img"
+                    onClick={() => handleSelect(idx)}
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        )}
         {product && (
           <div className="product-description-container">
             <div className="description-container">

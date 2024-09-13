@@ -135,3 +135,37 @@
   line-height: 1.75rem;
   color: black;
 }
+
+.mobile-slider-container {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .product-body {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .imgs-preview-container {
+    display: none;
+  }
+  .mobile-slider-container {
+    display: block;
+    width: 90%;
+    height: 640px;
+  }
+  .mobile-img-container {
+    width: 500px;
+    height: 600px;
+  }
+  .coursel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .product-description-container {
+    width: 90%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

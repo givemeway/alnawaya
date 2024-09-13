@@ -246,14 +246,15 @@ export const ProductsPage = ({ items }) => {
               <Link
                 to={`/product/${product.name}?id=${index}`}
                 style={{ textDecoration: "none" }}
+                className="product-row-container"
               >
-                <div key={index} className="react-window-row">
-                  <div className="product-card">
-                    <img src={product.image} />
-                    <div className="product-desc">
-                      <h6 className="product-name">{product.name}</h6>
-                      <p className="product-summary">{product.description}</p>
-                    </div>
+                <div key={index} className="product-card">
+                  <div className="product-img-container">
+                    <img className="product-img" src={product.image} />
+                  </div>
+                  <div className="product-desc">
+                    <h6 className="product-name">{product.name}</h6>
+                    <p className="product-summary">{product.description}</p>
                   </div>
                 </div>
               </Link>

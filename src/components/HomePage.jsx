@@ -19,7 +19,7 @@ export const HomePage = () => {
     rings: false,
     bracelet: false,
   });
-  const settings = {
+  const [settings, setSettings] = useState({
     dots: true,
     infinite: true,
     slidesToShow: 3,
@@ -27,9 +27,12 @@ export const HomePage = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
-  };
+  });
   const dispatch = useDispatch();
   useEffect(() => {
+    if (window.innerWidth < 767) {
+      setSettings((prev) => ({ ...prev, slidesToShow: 1 }));
+    }
     dispatch(
       setTabSelection({
         earnings: false,
