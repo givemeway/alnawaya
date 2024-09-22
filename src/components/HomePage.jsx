@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { db } from "../DB/category";
+import { db } from "../DB/category_bk.js";
 import Slider from "react-slick";
 import { Panel } from "./Panel";
 export const HomePage = () => {

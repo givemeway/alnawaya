@@ -11,11 +11,8 @@ import { ReturnPage } from "./Return";
 import { ShippingPage } from "./Shipping";
 import { ExchangePage } from "./Exchange";
 import { Panel } from "./Panel";
-import { useSelector } from "react-redux";
 
 function App() {
-  const { showContext } = useSelector((state) => state.tabSelection);
-
   return (
     <>
       <Routes>
@@ -30,7 +27,6 @@ function App() {
         <Route path="/refund-return" element={<ReturnPage />} />
         <Route path="/shipping-handeling" element={<ShippingPage />} />
         <Route path="/request-form" element={<ExchangePage />} />
-        <Route path="/panel" element={<Panel />} />
       </Routes>
       <Panel />
     </>

@@ -7,7 +7,6 @@ import { setTabSelection } from "../features/tabSelectedSlice";
 
 export const Search = () => {
   const tab = useSelector((state) => state.tabSelection);
-  console.log(tab);
   const dispatch = useDispatch();
   const handleContext = () => {
     dispatch(setTabSelection({ ...tab, showContext: true }));

@@ -11,14 +11,22 @@ export const db = {
       ],
       name: "anklets",
       image: "../../assets/anklelet/1/0Y1A9626.JPG",
+      images_thumb: [
+        "../../assets/anklelet/1/anklelet_20_360w.JPG",
+        "../../assets/anklelet/1/anklelet_21_360w.JPG",
+        "../../assets/anklelet/1/anklelet_20_360w.JPG",
+        "../../assets/anklelet/1/anklelet_20_360w.JPG",
+        "../../assets/anklelet/1/anklelet_20_360w.JPG",
+        "../../assets/anklelet/1/anklelet_20_360w.JPG",
+      ],
 
       images: [
-        "../../assets/anklelet/1/0Y1A9626.JPG",
-        "../../assets/anklelet/1/0Y1A9629.JPG",
-        "../../assets/anklelet/1/0Y1A9635.JPG",
-        "../../assets/anklelet/1/0Y1A9638.JPG",
-        "../../assets/anklelet/1/0Y1A9866.JPG",
-        "../../assets/anklelet/1/0Y1A9868.JPG",
+        "../../assets/anklelet/1/anklelet_20_1080w.JPG",
+        "../../assets/anklelet/1/anklelet_21_360w.JPG",
+        "../../assets/anklelet/1/anklelet_20_360w.JPG",
+        "../../assets/anklelet/1/anklelet_20_360w.JPG",
+        "../../assets/anklelet/1/anklelet_20_360w.JPG",
+        "../../assets/anklelet/1/anklelet_20_360w.JPG",
       ],
     },
     {

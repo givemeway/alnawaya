@@ -6,7 +6,7 @@ import { Header } from "./header";
 import { Footer } from "./footer";
 import { Search } from "./Search";
 import { useLocation, useParams } from "react-router-dom";
-import { db } from "../DB/category";
+import { db } from "../DB/category_bk";
 import Slider from "react-slick";
 
 export const Product = () => {
@@ -46,7 +46,7 @@ export const Product = () => {
         <div className="imgs-preview-container">
           {product && (
             <div className="imgs-container">
-              {product["images"].map((img, idx) => (
+              {product["images_thumb"].map((img, idx) => (
                 <img
                   src={img}
                   key={idx}
