@@ -1,6 +1,7 @@
 .contact-page {
   width: 100%;
   height: 100%;
+  background: white;
 }
 
 .contact-body {
@@ -12,6 +13,7 @@
   align-items: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  background: white;
 }
 
 .contact-container {

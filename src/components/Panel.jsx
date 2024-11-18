@@ -63,7 +63,10 @@ export const Panel = () => {
           onClick={handleClose}
         />
         <div className="panel-img-container">
-          <img src="../../assets/stuartz-green.png" className="panel-img" />
+          <img
+            src="../../assets/stuartz-green-dark.jpg"
+            className="panel-img"
+          />
         </div>
 
         <h3 className="panel-heading">MENU</h3>

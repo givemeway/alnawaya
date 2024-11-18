@@ -6,14 +6,27 @@
   align-items: center;
   width: 100%;
   position: relative;
+  background: #7e9163;
 }
 
 .search-input {
   outline: none;
   border: 1px solid var(--color-grey);
-  width: 100%;
+  /* width: 0%; */
   height: 40px;
   margin-left: 2rem;
+  border-radius: 0.75rem;
+}
+
+.search-input.show {
+  visibility: visible;
+  width: 100%;
+  transition: width 200ms ease-in-out;
+}
+.search-input.hide {
+  width: 0%;
+  visibility: hidden;
+  transition: width 200ms ease-in-out;
 }
 
 .search-img {
@@ -33,20 +46,23 @@
 
 .search-banner-container {
   height: 100%;
-  width: 70%;
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  /* position: relative;
+  left: 12%; */
 }
 
 .search-input-container {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   height: 100%;
   width: 30%;
+  left: 0%;
 }
 
 .search-context-container {
@@ -55,9 +71,19 @@
 
 .search-icon {
   position: absolute;
-  right: 1rem;
+  /* right: 1rem; */
   height: 100%;
-  color: grey;
+  color: black;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.search-icon.left {
+  left: 1rem;
+}
+
+.search-icon.right {
+  right: 1rem;
 }
 
 .img-banner-name {

@@ -5,7 +5,7 @@
 
 .home-bg-container {
   height: 600px;
-  background: #c3d3c2;
+  background: white;
   position: relative;
   display: flex;
   justify-content: center;
@@ -159,6 +159,7 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: 2rem;
+  background: white;
 }
 
 /* Responsive behavior */
