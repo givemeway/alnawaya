@@ -4,7 +4,7 @@ import "./ProductsPage.css";
 import { ListIcon } from "./icons/ListIcon";
 import { TwoColumnIcon } from "./icons/TwoColumnIcon";
 import { FixedSizeList, FixedSizeGrid } from "react-window";
-import { db } from "../DB/category_bk";
+import { db } from "../DB/category_new";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Header } from "./header";
 import { Footer } from "./footer";

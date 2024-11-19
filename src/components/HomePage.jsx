@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { db } from "../DB/category_bk.js";
+import { db } from "../DB/category_new.js";
 import Slider from "react-slick";
 import { Panel } from "./Panel";
 export const HomePage = () => {
@@ -99,17 +99,17 @@ export const HomePage = () => {
         </div>
         <div className="carousel-container">
           <Slider {...settings}>
-            <div className="carousel-img-container">
+            {/* <div className="carousel-img-container">
               <img src={db["anklets"][1]["image"]} className="carousel-img" />
-            </div>
+            </div> */}
             <div className="carousel-img-container">
               <img src={db["bracelets"][1]["image"]} className="carousel-img" />
             </div>
             <div className="carousel-img-container">
-              <img src={db["earrings"][1]["image"]} className="carousel-img" />
+              <img src={db["earrings"][0]["image"]} className="carousel-img" />
             </div>
             <div className="carousel-img-container">
-              <img src={db["necklace"][1]["image"]} className="carousel-img" />
+              <img src={db["necklace"][0]["image"]} className="carousel-img" />
             </div>
           </Slider>
         </div>

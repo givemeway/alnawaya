@@ -6,13 +6,14 @@ import { Header } from "./header";
 import { Footer } from "./footer";
 import { Search } from "./Search";
 import { useLocation, useParams } from "react-router-dom";
-import { db } from "../DB/category_bk";
+import { db } from "../DB/category_new.js";
 import Slider from "react-slick";
 
 export const Product = () => {
   const params = useParams();
   const location = useLocation();
   const productName = params["*"];
+  console.log({ productName });
   const [product, setProduct] = useState(undefined);
   const [productID, setProductID] = useState(0);
   const [selectedImage, setSelectedImage] = useState(null);
