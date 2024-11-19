@@ -13,7 +13,6 @@ export const Product = () => {
   const params = useParams();
   const location = useLocation();
   const productName = params["*"];
-  console.log({ productName });
   const [product, setProduct] = useState(undefined);
   const [productID, setProductID] = useState(0);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -98,12 +97,12 @@ export const Product = () => {
             </div>
             <div className="product-detailed-descrption-container">
               <h3 className="detailed-description-title">Description</h3>
-              <p
+              {/* <p
                 className="detailed-description-p"
                 style={{ textOverflow: "ellipsis" }}
               >
                 {product["description_details"]}
-              </p>
+              </p> */}
               <ul className="description-ul">
                 {product["description_list"].map((list, idx) => (
                   <li key={idx}>{list}</li>
