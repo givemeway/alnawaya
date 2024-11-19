@@ -95,6 +95,10 @@ export const Product = () => {
               <span className="product-category">Category:</span>
               <span>{product["name"]}</span>
             </div>
+            <div className="product-category-container">
+              <span className="product-category">Finish:</span>
+              <span>{product["finish"]}</span>
+            </div>
             <div className="product-detailed-descrption-container">
               <h3 className="detailed-description-title">Description</h3>
               {/* <p

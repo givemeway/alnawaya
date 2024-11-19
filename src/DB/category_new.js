@@ -4,6 +4,7 @@ export const db = {
     {
       name: "bracelets",
       image: "../../assets/bracelet/1/bracelet_16_1080w.jpg",
+      finish: "18K Gold",
       images: [
         "../../assets/bracelet/1/bracelet_14_1080w.jpg",
         "../../assets/bracelet/1/bracelet_15_1080w.jpg",
@@ -27,6 +28,7 @@ export const db = {
     {
       name: "bracelets",
       image: "../../assets/bracelet/2/bracelet_22_1080w.jpg",
+      finish: "18K Gold",
       images: [
         "../../assets/bracelet/2/bracelet_17_1080w.jpg",
         "../../assets/bracelet/2/bracelet_18_1080w.jpg",
@@ -56,6 +58,7 @@ export const db = {
     {
       name: "bracelets",
       image: "../../assets/bracelet/3/bracelet_30_1080w.jpg",
+      finish: "18K Gold",
       images: [
         "../../assets/bracelet/3/bracelet_24_1080w.jpg",
         "../../assets/bracelet/3/bracelet_25_1080w.jpg",
@@ -87,6 +90,7 @@ export const db = {
     {
       name: "bracelets",
       image: "../../assets/bracelet/4/bracelet_35_1080w.jpg",
+      finish: "18K Gold",
       images: [
         "../../assets/bracelet/4/bracelet_32_1080w.jpg",
         "../../assets/bracelet/4/bracelet_33_1080w.jpg",
@@ -112,6 +116,7 @@ export const db = {
     {
       name: "bracelets",
       image: "../../assets/bracelet/5/bracelet_39_1080w.jpg",
+      finish: "18K Gold",
       images: [
         "../../assets/bracelet/5/bracelet_37_1080w.jpg",
         "../../assets/bracelet/5/bracelet_38_1080w.jpg",
@@ -135,6 +140,7 @@ export const db = {
     {
       name: "bracelets",
       image: "../../assets/bracelet/6/bracelet_44_1080w.jpg",
+      finish: "18K Gold",
       images: [
         "../../assets/bracelet/6/bracelet_41_1080w.jpg",
         "../../assets/bracelet/6/bracelet_42_1080w.jpg",
@@ -160,6 +166,7 @@ export const db = {
     {
       name: "bracelets",
       image: "../../assets/bracelet/7/bracelet_49_1080w.jpg",
+      finish: "Silver",
       images: [
         "../../assets/bracelet/7/bracelet_46_1080w.jpg",
         "../../assets/bracelet/7/bracelet_47_1080w.jpg",
@@ -185,6 +192,7 @@ export const db = {
     {
       name: "bracelets",
       image: "../../assets/bracelet/8/bracelet_53_1080w.jpg",
+      finish: "18K Gold",
       images: [
         "../../assets/bracelet/8/bracelet_51_1080w.jpg",
         "../../assets/bracelet/8/bracelet_52_1080w.jpg",
@@ -210,6 +218,7 @@ export const db = {
     {
       name: "earrings",
       image: "../../assets/earrings/1/earrings_60_1080w.jpg",
+      finish: "Silver",
       images: [
         "../../assets/earrings/1/earrings_55_1080w.jpg",
         "../../assets/earrings/1/earrings_56_1080w.jpg",
@@ -239,6 +248,7 @@ export const db = {
     {
       name: "earrings",
       image: "../../assets/earrings/2/earrings_67_1080w.jpg",
+      finish: "18K Gold",
       images: [
         "../../assets/earrings/2/earrings_62_1080w.jpg",
         "../../assets/earrings/2/earrings_63_1080w.jpg",
@@ -270,6 +280,7 @@ export const db = {
     {
       name: "necklace",
       image: "../../assets/necklace/1/necklace_71_1080w.jpg",
+      finish: "18K Gold",
       images: [
         "../../assets/necklace/1/necklace_69_1080w.jpg",
         "../../assets/necklace/1/necklace_70_1080w.jpg",
